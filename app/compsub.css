@@ -1,0 +1,51 @@
+.subcont {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "admno fname"
+    "stdclass stdsection"
+    "stdcomplaint stdcomplaint"
+    "compSubmit compSubmit";
+  align-content: start;
+}
+
+.stdclass {
+  grid-area: stdclass;
+}
+
+.stdsection {
+  grid-area: stdsection;
+}
+
+.stdcomplaint {
+  grid-area: stdcomplaint;
+}
+
+.compSubmit {
+  grid-area: compSubmit;
+}
+
+.admno {
+  grid-area: admno;
+}
+
+.name {
+  grid-area: fname;
+}
+
+.textarea {
+  height: 100%;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.txt{
+  height: 200px;
+}
